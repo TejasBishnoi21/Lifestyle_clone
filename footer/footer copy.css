@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "lifestyleBold";
+    src: url(FontsFree-Net-Proxima-Nova-Bold.ttf) format("truetype");  
+}
+@font-face {
+    font-family: "lifestyleSemiBold";
+    src: url(FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "lifestyleRegular";
+    src: url(FontsFree-Net-ProximaNova-Regular.ttf) format("truetype");
+}
+
+#newsletterBox{
+    width: 82%;
+    border: 1px solid red;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+.box{
+    width: 100%;
+    margin: auto;
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+}
+.boxI{
+    border: 1px solid blue;
+    padding: 5px;
+}
+.boxI>h4{
+    font-family: "lifestyleBold",monospace;
+}
