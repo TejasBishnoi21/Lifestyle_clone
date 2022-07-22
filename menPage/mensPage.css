@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "lifestyleBold";
+    src: url(/navbar/FontsFree-Net-Proxima-Nova-Bold.ttf) format("truetype");  
+}
+@font-face {
+    font-family: "lifestyleSemiBold";
+    src: url(/navbar/FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "lifestyleRegular";
+    src: url(/navbar/FontsFree-Net-ProximaNova-Regular.ttf) format("truetype");
+}
+.brandsBox{
+    width: 82%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.brandsBox>div{
+    width: 100%;
+    /* border: 1px solid red; */
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "lifestyleRegular";
+}
+.brandsBox h3{
+    font-size: 35px;
+}
+.brandsFlex{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin: auto;
+    /* border: 1px solid green; */
+    justify-content: space-around;
+}
+.brandsFlex img{
+    width: 100%;
+}
+.brandCards{
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+.offerBanner{
+    width: 82%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    /* border: 1px solid red; */
+}
