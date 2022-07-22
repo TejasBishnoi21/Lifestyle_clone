@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "lifestyleBold";
+    src: url(/navbar/FontsFree-Net-Proxima-Nova-Bold.ttf) format("truetype");  
+}
+@font-face {
+    font-family: "lifestyleSemiBold";
+    src: url(/navbar/FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "lifestyleRegular";
+    src: url(/navbar/FontsFree-Net-ProximaNova-Regular.ttf) format("truetype");
+}
+.offerStrip{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffa41c;
+    color: white;
+    font-family: "lifestyleSemiBold";
+}
+/* [Slider CSS Starts Here] */
+
+/* [Slider CSS Ends Here] */
+
+.offerBanner{
+    width: 82%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    /* border: 1px solid red; */
+}
+.offerBanner img{
+    width: 100%;
+}
+.categoryBox , .essentialsBox{
+    width: 82%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.categoryBox>div ,.essentialsBox>div{
+    width: 100%;
+    /* border: 1px solid red; */
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "lifestyleRegular";
+}
+.categoryBox h3 , .essentialsBox h3{
+    font-size: 35px;
+}
+.categoryGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+.categoryCards{
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+.categoryCards img{
+    width: 100%;
+}
+.essentialsFlex{
+    width: 100%;
+    display: flex;
+}
+.essentialsFlex img{
+    width: 100%;
+}
