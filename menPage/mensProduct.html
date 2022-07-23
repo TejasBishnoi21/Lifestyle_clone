@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Mens Products</title>
+    <link rel="stylesheet" href="/navbar/navbar.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/menPage/mensProduct.css">
+
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div class="allProducts">
+        <h4>All Mens Products</h4>
+    </div>
+
+    <div class="filterContainer">
+        <div class="filterBox">
+            <select name="" id="priceFilter">
+                <option value="">Price</option>
+            </select>
+
+            <select name="" id="categoryFilter">
+                <option value="">Category</option>
+            </select>
+
+            <select name="" id="brandFilter">
+                <option value="all">Brand</option>
+                <option value="V Dot">V Dot</option>
+                <option value="US POLO ASSN.">US POLO ASSN.</option>
+                <option value="CELIO">CELIO</option>
+                <option value="UNITED COLORS OF BENETTON">UNITED COLORS OF BENETTON</option>
+                <option value="LP SPORT">LP SPORT</option>
+                <option value="ALLEN SOLLY">ALLEN SOLLY</option>
+                <option value="PEPE JEANS">PEPE JEANS</option>
+                <option value="PUMA">PUMA</option>
+                <option value="ADIDAS">ADIDAS</option>
+                <option value="LEVI'S">LEVI'S</option>
+                <option value="TOMMY HILFIGER">TOMMY HILFIGER</option>
+                <option value="FOSSIL">FOSSIL</option>
+                <option value="EMPORIO ARMANI">EMPORIO ARMANI</option>
+            </select>
+
+            <select name="" id="sizeFilter">
+                <option value="">Size</option>
+            </select>
+
+            <select name="" id="colorFilter">
+                <option value="">Color</option>
+            </select>
+
+        </div>
+    </div>
+    
+    <div class="singleFilter">
+        <div><p>1358 Products</p></div>
+        <div>
+            <p>Sort By</p>
+            <select name="" id="">
+                <option value="">New Arrivals</option>
+                <option value="">Discount</option>
+            </select>
+        </div>
+    </div>
+<!-- [Product Display From Here] -->
+<div id="productDisplayContainer">
+    <h1>Products will be displayed here</h1>
+</div>
+
+</body>
+</html>
+
+<script>
+    function loadHTML(){
+        fetch('/navbar/navbar.html')
+        .then(response=> response.text())
+        .then(text=> document.getElementById('navbar').innerHTML = text);
+        }
+        loadHTML();
+
+        function loadHTMLFt(){
+        fetch('/footer/footer.html')
+        .then(response=> response.text())
+        .then(text=> document.getElementById('footer').innerHTML = text);
+        }
+        loadHTMLFt();
+</script>
+
+<script>
+    let mensData=[
+    {
+        product : "V DOT Men Striped Full Sleeves Slim Fit Casual Shirt",
+        price : 1299,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010985135-White-White-1000010985135_01-2100.jpg",
+        size : "S,M",
+        color : "Black",
+        category : "Shirts",
+        occasion : "Casual",
+        id : 1,
+        brand : "V Dot"
+        
+    },
+    {
+        product : "US POLO ASSN. Men Printed Regular Fit Casual Shirt",
+        price : 1899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010710984-Blue-1000010710984_02-2100.jpg",
+        size : "SM",
+        color : "Blue",
+        category : "Shirts",
+        id : 2,
+        occasion : "Casual",
+        brand : "US POLO ASSN."
+    },
+    {
+        product : "US POLO ASSN. Men Printed Regular Fit Casual Shirt",
+        price : 1899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010710984-Blue-1000010710984_02-2100.jpg",
+        size : "S,M",
+        color : "Blue",
+        category : "Shirts",
+        id : 3,
+        occasion : "Casual",
+        brand : "US POLO ASSN."
+    },
+    {
+        product : "CELIO Men Solid Slim Fit Casual Shirt",
+        price : 2899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011784679-Red-Burgundy-1000011784679_01-2100.jpg",
+        size : "S,M",
+        color : "Red",
+        id : 4,
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "CELIO"
+    },
+    {
+        product : "UNITED COLORS OF BENETTON Men Checked Slim Fit Casual Shirt",
+        price : 3899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011142565-Blue-BLUE-1000011142565_01-2100.jpg",
+        size : "S,M",
+        color : "Red",
+        id : 5,
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "UNITED COLORS OF BENETTON"
+    },
+    {
+        product : "UNITED COLORS OF BENETTON Men Checked Slim Fit Casual Shirt",
+        price : 3899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011142565-Blue-BLUE-1000011142565_01-2100.jpg",
+        size : "S,M",
+        color : "Red",
+        id : 6,
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "UNITED COLORS OF BENETTON"
+    },
+    {
+        product : "LP SPORT Men Striped Slim Fit Casual Shirt",
+        price : 2599,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011366346-Red-Maroon-1000011366346_01-2100.jpg",
+        size : "S,M",
+        color : "Maroon",
+        id : 7,
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "LP SPORT"
+    },
+    {
+        product : "ALLEN SOLLY Men Checked Regular Fit Casual Shirt",
+        price : 1799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011324543-Pink-Pink-1000011324543_01-2100.jpg",
+        size : "S,M",
+        color : "Pink",
+        id : 8,
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "ALLEN SOLLY"
+    },
+    {
+        product : "PEPE JEANS Men Solid Regular Fit Casual Shirt",
+        price : 2799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011049466-Beige-Khaki-1000011049466-10-2-2022_01-2100.jpg",
+        size : "S,M",
+        color : "Khaki",
+        id : 9,
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "PEPE JEANS"
+    },
+    {
+        product : "JACK & JONES Solid Low Rise Slim Fit Jeans",
+        price : 2799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000006618613-8918-Black-Jet-Black-1000006618613-8918_01-2100.jpg",
+        size : "30,32",
+        color : "Black",
+        id : 10,
+        category : "Jeans",
+        occasion : "Casual",
+        brand : "JACK & JONES"
+    },
+    {
+        product : "LEE Men Dark-Washed Regular Tapered Fit Jeans",
+        price : 3799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010401609-Black-1000010401609_02-2100.jpg",
+        size : "32,34",
+        color : "Blue",
+        id : 11,
+        category : "Jeans",
+        occasion : "Casual",
+        brand : "LEE"
+    },
+    {
+        product : "PEPE JEANS Men Skinny Fit Jeans",
+        price : 4799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011679361-Blue-DarkStone-1000011679361_02-2100.jpg",
+        size : "32,34",
+        color : "Blue",
+        id : 12,
+        category : "Jeans",
+        occasion : "Casual",
+        brand : "PEPE JEANS"
+    },
+    {
+        product : "U.S. POLO ASSN. Men Stonewashed Slim Tapered Jeans",
+        price : 2799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011181017-Blue-MidStone-1000011181017_01-2100.jpg",
+        size : "32,38",
+        color : "Blue",
+        id : 13,
+        category : "Jeans",
+        occasion : "Casual",
+        brand : "U.S. POLO ASSN."
+    },
+    {
+        product : "PUMA Men Printed Hooded Sweatshirt",
+        price : 7799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010803777-Black-1000010803777_01-2100.jpg",
+        size : "S,M,XL",
+        color : "Black",
+        id : 14,
+        category : "Jacket",
+        occasion : "Casual",
+        brand : "PUMA"
+    },
+    {
+        product : "ADIDAS Men Panel Striped Sweatshirt",
+        price : 5899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010873008-Black-Black-1000010873008_01-2100.jpg",
+        size : "S,M,XL",
+        color : "Black",
+        id : 15,
+        category : "Sweatshirt",
+        occasion : "Casual",
+        brand : "ADIDAS"
+    },
+    {
+        product : "LEVI'S Men Printed Hooded Sweatshirt",
+        price : 4799,
+        image : "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010878623-Green-Green-1000010878623_01-2100.jpg",
+        size : "S,M,XL",
+        color : "Black",
+        id : 16,
+        category : "Sweatshirt",
+        occasion : "Casual",
+        brand : "LEVI'S"
+    },
+    {
+        product : "CELIO Men Solid Mock Collar Puffer Jacket",
+        price : 4799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010881366-Red-Red-1000010881366_01-2100.jpg",
+        size : "S,M,XL",
+        color : "Red",
+        id : 17,
+        category : "Jacket",
+        occasion : "Casual",
+        brand : "CELIO"
+    },
+    {
+        product : "FOSSIL FB-01 Men Two-Toned Analog Watch - FS5653",
+        price : 9495,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008612644_01-2100.jpg",
+        size : "OS",
+        color : "Gold",
+        id : 18,
+        category : "Watch",
+        occasion : "Casual",
+        brand : "FOSSIL"
+    },
+    {
+        product : "TOMMY HILFIGER Men Water-Resistant Multifunction Watch- TH1791880",
+        price : 19495,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010801388_01-2100.jpg",
+        size : "OS",
+        color : "Gold",
+        id : 19,
+        category : "Watch",
+        occasion : "Casual",
+        brand : "TOMMY HILFIGER"
+    },
+    {
+        product : "EMPORIO ARMANI Men Water-Resistant Chronograph Watch - AR11458I",
+        price : 24495,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011253687_01-2100.jpg",
+        size : "OS",
+        color : "Silver",
+        id : 20,
+        category : "Watch",
+        occasion : "Casual",
+        brand : "EMPORIO ARMANI"
+    },
+    {
+        product : "EMPORIO ARMANI Men Round Chronograph Watch - AR11362",
+        price : 27495,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010849355_01-2100.jpg",
+        size : "OS",
+        color : "Silver,Gold",
+        id : 21,
+        category : "Watch",
+        occasion : "Casual",
+        brand : "EMPORIO ARMANI"
+    },
+]
+// [Data Ends Here]
+const productBox = document.getElementById('productDisplayContainer');
+
+const filter = document.getElementById('brandFilter');
+let cart= JSON.parse(localStorage.getItem("cartData")) || [];
+
+function displayProducts(mensData){
+    productBox.innerHTML="";
+    mensData.foreach(function(elem){
+        const productDisplayBox = document.createElement('div');
+        const productImage = document.createElement('img');
+        productImage.src=elem.image;
+        const productPrice = document.createElement('h4');
+        productPrice.innerText=elem.price;
+        const productName = document.createElement('p');
+        productName.innerText=elem.product;
+
+        const addCartButton = document.createElement('button');
+        addCartButton.innerText="ADD TO BASKET";
+        addCartButton.addEventListener("click",function(){
+            if(addCartFunc(elem.id)===true){
+                alert("Product Added Succesfully");
+                cart.push(elem);
+                localStorage.setItem("cartData",JSON.stringify(cart));
+            }
+            else
+            {
+                alert("Product Already in Cart");
+            }
+        })
+
+        productDisplayBox.append(productImage,productPrice,productName,addCartButton);
+        productDisplayContainer.append(productDisplayBox);
+    })
+}
+
+displayProducts(mensData);
+
+filter.addEventListener("change",function(){
+    if(filter.value === "all"){
+        displayProducts(mensData);
+    }
+    else{
+        let filtered = mensData.filter(function(elem){
+            return elem.brand === filter.value;
+        })
+        displayProducts(filtered);
+    }
+})
+
+function addCartFunc(){
+    for(let i=0;i<cart.length;i++)
+    {
+        if(cart[i].id === mensData.id)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+</script>

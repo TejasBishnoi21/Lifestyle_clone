@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "lifestyleBold";
+    src: url(/navbar/FontsFree-Net-Proxima-Nova-Bold.ttf) format("truetype");  
+}
+@font-face {
+    font-family: "lifestyleSemiBold";
+    src: url(/navbar/FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "lifestyleRegular";
+    src: url(/navbar/FontsFree-Net-ProximaNova-Regular.ttf) format("truetype");
+}
+.allProducts{
+    width: 82%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: "lifestyleSemiBold";
+    font-size: 35px;
+}
+.filterContainer{
+    width: 100%;
+    height: 120px;
+    /* border: 1px solid red; */
+    background-color: rgb(244, 242, 242);
+    display: flex;
+}
+.filterBox{
+    width: 82%;
+    height: 50px;
+    /* border: 1px solid red; */
+    margin: auto;
+    background-color: rgb(244, 242, 242);
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    font-family: "lifestyleSemiBold";
+}
+.filterBox select,.singleFilter select{
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    font-family: "lifestyleRegular";
+}
+.singleFilter{
+    width: 82%;
+    height: 50px;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-family: "lifestyleSemiBold";
+}
+.singleFilter>:nth-child(2){
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid red; */
+}
+#productDisplayContainer{
+    width: 82%;
+    margin: auto;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "lifestyleSemiBold";
+}

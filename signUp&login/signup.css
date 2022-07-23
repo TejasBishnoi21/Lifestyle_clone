@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "lifestyleBold";
+    src: url(/navbar/FontsFree-Net-Proxima-Nova-Bold.ttf) format("truetype");  
+}
+@font-face {
+    font-family: "lifestyleSemiBold";
+    src: url(/navbar/FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "lifestyleRegular";
+    src: url(/navbar/FontsFree-Net-ProximaNova-Regular.ttf) format("truetype");
+}
+.mainBox{
+    width: 50%;
+    margin-top: 20%;
+    margin-left: 25%;
+    /* margin:auto; */
+    border: 1px solid red;
+}
+.innerBox{
+    width: 80%;
+    margin: auto;
+    border: 1px solid green;
+    font-family: "lifestyleRegular";
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}

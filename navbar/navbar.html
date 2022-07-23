@@ -34,12 +34,12 @@
     <div id="whiteWrap">
         <div class="containerWrap">
             <div class="section1">
-                <img src="/navbar/lifestyleLogoClip-removebg-preview.png" alt="lifestyleLogo">
-                <h5>Women</h5>
-                <h5>Men</h5>
-                <h5>Kids</h5>
-                <h5>Shoes & Bags</h5>
-                <h5>Beauty</h5>
+                <img onClick="doAction()" src="/navbar/lifestyleLogoClip-removebg-preview.png" alt="lifestyleLogo">
+                <h5><a href="/womenPage/women.html">Women</a></h5>
+                <h5><a href="/menPage/mensPage.html">Men</a></h5>
+                <h5><a href="#">Kids</a></h5>
+                <h5><a href="#">Shoes & Bags</a></h5>
+                <h5><a href="#">Beauty</a></h5>
             </div>
             <div id="searchBox">
                 <div class="elementBox">
@@ -48,15 +48,25 @@
                 </div>
             </div>
             <div class="section2">
-                <h5>More</h5>
+                <h5><a href="#">More</a></h5>
                 <h5>|</h5>
-                <h5>Sign Up/Sign In</h5>
+                <h5><a href="#">Sign Up/Sign In</a></h5>
                 <h5><img src="/navbar/favorite_border_black_24dp.svg" alt="wishlist"></h5>
                 <h5><img src="/navbar/shopping_basket_black_24dp.svg" alt="cart"></h5>
             </div>
         </div>
     </div>
+    <div class="offerStrip">
+        <div><h4>DEAL OF THE DAY : Flat 50% off + Extra 10% off. Use Code : SALE10  ></h4></div>
+    </div>
     
 
 </body>
 </html>
+
+<script>
+    function doAction(){
+        console.log("working fine");
+        window.location.href="/index.html"
+    }
+</script>

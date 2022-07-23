@@ -1,0 +1,215 @@
+mensData=[
+    {
+        product : "V DOT Men Striped Full Sleeves Slim Fit Casual Shirt",
+        price : 1299,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010985135-White-White-1000010985135_01-2100.jpg",
+        size : "S","M",
+        color : "Black",
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "V Dot"
+    },
+    {
+        product : "US POLO ASSN. Men Printed Regular Fit Casual Shirt",
+        price : 1899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010710984-Blue-1000010710984_02-2100.jpg",
+        size : "S","M",
+        color : "Blue",
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "US POLO ASSN."
+    },
+    {
+        product : "US POLO ASSN. Men Printed Regular Fit Casual Shirt",
+        price : 1899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010710984-Blue-1000010710984_02-2100.jpg",
+        size : "S","M",
+        color : "Blue",
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "US POLO ASSN."
+    },
+    {
+        product : "CELIO Men Solid Slim Fit Casual Shirt",
+        price : 2899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011784679-Red-Burgundy-1000011784679_01-2100.jpg",
+        size : "S","M",
+        color : "Red",
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "CELIO"
+    },
+    {
+        product : "UNITED COLORS OF BENETTON Men Checked Slim Fit Casual Shirt",
+        price : 3899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011142565-Blue-BLUE-1000011142565_01-2100.jpg",
+        size : "S","M",
+        color : "Red",
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "UNITED COLORS OF BENETTON"
+    },
+    {
+        product : "UNITED COLORS OF BENETTON Men Checked Slim Fit Casual Shirt",
+        price : 3899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011142565-Blue-BLUE-1000011142565_01-2100.jpg",
+        size : "S","M",
+        color : "Red",
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "UNITED COLORS OF BENETTON"
+    },
+    {
+        product : "LP SPORT Men Striped Slim Fit Casual Shirt",
+        price : 2599,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011366346-Red-Maroon-1000011366346_01-2100.jpg",
+        size : "S","M",
+        color : "Maroon",
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "LP SPORT"
+    },
+    {
+        product : "ALLEN SOLLY Men Checked Regular Fit Casual Shirt",
+        price : 1799,
+        image : :"https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011324543-Pink-Pink-1000011324543_01-2100.jpg",
+        size : "S","M",
+        color : "Pink",
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "ALLEN SOLLY"
+    },
+    {
+        product : "PEPE JEANS Men Solid Regular Fit Casual Shirt",
+        price : 2799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011049466-Beige-Khaki-1000011049466-10-2-2022_01-2100.jpg",
+        size : "S","M",
+        color : "Khaki",
+        category : "Shirts",
+        occasion : "Casual",
+        brand : "PEPE JEANS"
+    },
+    {
+        product : "JACK & JONES Solid Low Rise Slim Fit Jeans",
+        price : 2799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000006618613-8918-Black-Jet-Black-1000006618613-8918_01-2100.jpg",
+        size : "30","32",
+        color : "Black",
+        category : "Jeans",
+        occasion : "Casual",
+        brand : "JACK & JONES"
+    },
+    {
+        product : "LEE Men Dark-Washed Regular Tapered Fit Jeans",
+        price : 3799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010401609-Black-1000010401609_02-2100.jpg",
+        size : "32","34",
+        color : "Blue",
+        category : "Jeans",
+        occasion : "Casual",
+        brand : "LEE"
+    },
+    {
+        product : "PEPE JEANS Men Skinny Fit Jeans",
+        price : 4799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011679361-Blue-DarkStone-1000011679361_02-2100.jpg",
+        size : "32","34",
+        color : "Blue",
+        category : "Jeans",
+        occasion : "Casual",
+        brand : "PEPE JEANS"
+    },
+    {
+        product : "U.S. POLO ASSN. Men Stonewashed Slim Tapered Jeans",
+        price : 2799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011181017-Blue-MidStone-1000011181017_01-2100.jpg",
+        size : "32","38",
+        color : "Blue",
+        category : "Jeans",
+        occasion : "Casual",
+        brand : "U.S. POLO ASSN."
+    },
+    {
+        product : "PUMA Men Printed Hooded Sweatshirt",
+        price : 7799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010803777-Black-1000010803777_01-2100.jpg",
+        size : "S","M","XL",
+        color : "Black",
+        category : "Jacket",
+        occasion : "Casual",
+        brand : "PUMA"
+    },
+    {
+        product : "ADIDAS Men Panel Striped Sweatshirt",
+        price : 5899,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010873008-Black-Black-1000010873008_01-2100.jpg",
+        size : "S","M","XL",
+        color : "Black",
+        category : "Sweatshirt",
+        occasion : "Casual",
+        brand : "ADIDAS"
+    },
+    {
+        product : "LEVI'S Men Printed Hooded Sweatshirt",
+        price : 4799,
+        image : "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010878623-Green-Green-1000010878623_01-2100.jpg",
+        size : "S","M","XL",
+        color : "Black",
+        category : "Sweatshirt",
+        occasion : "Casual",
+        brand : "LEVI'S"
+    },
+    {
+        product : "CELIO Men Solid Mock Collar Puffer Jacket",
+        price : 4799,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010881366-Red-Red-1000010881366_01-2100.jpg",
+        size : "S","M","XL",
+        color : "Red",
+        category : "Jacket",
+        occasion : "Casual",
+        brand : "CELIO"
+    },
+    {
+        product : "FOSSIL FB-01 Men Two-Toned Analog Watch - FS5653",
+        price : 9495,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008612644_01-2100.jpg",
+        size : "OS",
+        color : "Gold",
+        category : "Watch",
+        occasion : "Casual",
+        brand : "CELIO"
+    },
+    {
+        product : "TOMMY HILFIGER Men Water-Resistant Multifunction Watch- TH1791880",
+        price : 19495,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010801388_01-2100.jpg",
+        size : "OS",
+        color : "Gold",
+        category : "Watch",
+        occasion : "Casual",
+        brand : "TOMMY HILFIGER"
+    },
+    {
+        product : "EMPORIO ARMANI Men Water-Resistant Chronograph Watch - AR11458I",
+        price : 24495,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011253687_01-2100.jpg",
+        size : "OS",
+        color : "Silver",
+        category : "Watch",
+        occasion : "Casual",
+        brand : "EMPORIO ARMANI"
+    },
+    {
+        product : "EMPORIO ARMANI Men Round Chronograph Watch - AR11362",
+        price : 27495,
+        image : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010849355_01-2100.jpg",
+        size : "OS",
+        color : "Silver" "Gold",
+        category : "Watch",
+        occasion : "Casual",
+        brand : "EMPORIO ARMANI"
+    },
+
+
+
+]
