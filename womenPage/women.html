@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women Section</title>
+    <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/lifestyle/favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="/navbar/navbar.css">
     <link rel="stylesheet" href="women.css">
     <link rel="stylesheet" href="/footer.css">
@@ -31,16 +32,16 @@
         <!--radio buttons end-->
         <!--slide images start-->
         <div class="slide first">
-          <img src="/womenPage/womenSlider/HP_LS_Women_Desktop-2-21July2022.jpg" alt="pic1">
+          <img onclick="showProducts()" src="/womenPage/womenSlider/HP_LS_Women_Desktop-2-21July2022.jpg" alt="pic1">
         </div>
         <div class="slide">
-          <img src="/womenPage/womenSlider/HP_LS_Women_Desktop-3-21July2022.jpg" alt="pic2">
+          <img onclick="showProducts()" src="/womenPage/womenSlider/HP_LS_Women_Desktop-3-21July2022.jpg" alt="pic2">
         </div>
         <div class="slide">
-          <img src="/womenPage/womenSlider/HP_LS_Women_Desktop-4-21July2022.jpg" alt="pic3">
+          <img onclick="showProducts()" src="/womenPage/womenSlider/HP_LS_Women_Desktop-4-21July2022.jpg" alt="pic3">
         </div>
         <div class="slide">
-          <img src="/womenPage/womenSlider/LS-Banner5-desktop-Women-21July2022.jpg" alt="pic4">
+          <img onclick="showProducts()" src="/womenPage/womenSlider/LS-Banner5-desktop-Women-21July2022.jpg" alt="pic4">
         </div>
         <!--slide images end-->
         <!--automatic navigation start-->
@@ -65,19 +66,19 @@
     </div>
 
     <div class="offerBanner">
-        <img src="./desktop-women-9modblock-StripBanner2-D-19July2022.gif" alt="gif">
+        <img onclick="showProducts()" src="./desktop-women-9modblock-StripBanner2-D-19July2022.gif" alt="gif">
     </div>
     <hr class="footerHr">
     <div class="offerBanner"> 
-        <img src="./desktop-dept-10modblock-oneBythree-A-Women-21July2022.jpg" alt="">
+        <img onclick="showProducts()" src="./desktop-dept-10modblock-oneBythree-A-Women-21July2022.jpg" alt="">
     </div>
     <hr class="footerHr">
     <div class="offerBanner">
-        <img src="./desktop-dept-12modblock-oneBythree-A-StripBanner1-18July2022.jpg" alt="">
+        <img onclick="showProducts()" src="./desktop-dept-12modblock-oneBythree-A-StripBanner1-18July2022.jpg" alt="">
     </div>
     <hr class="footerHr">
     <div class="offerBanner">
-        <img src="./desktop-dept-modularblock-oneBytwo1A-Women-22June2022.jpg" alt="">
+        <img onclick="showProducts()" src="./desktop-dept-modularblock-oneBytwo1A-Women-22June2022.jpg" alt="">
     </div>
     <hr class="footerHr">
     <div class="categoryBox">
@@ -157,5 +158,10 @@
   function doAction(){
       console.log("working fine");
       window.location.href="/index.html"
+  }
+</script>
+<script>
+  function showProducts(){
+    window.location.href="/womenPage/womenP2.html"
   }
 </script>

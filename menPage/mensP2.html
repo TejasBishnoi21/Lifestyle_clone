@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Mens Page</title>
+    <title>Lifestyle | All Men Products</title>
+    <link rel="icon" type="image/png" href="https://i1.lmsin.net/website_images/in/favicons/lifestyle/favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="/navbar/navbar.css">
     <link rel="stylesheet" href="/menPage/mensP2CSS.css">
     <link rel="stylesheet" href="/footer/footer.css">
@@ -123,6 +124,7 @@
         color : "Blue",
         category : "Shirts",
         occasion : "Casual",
+        id : 2,
         brand : "US POLO ASSN."
     },
     
@@ -132,7 +134,7 @@
         img : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011784679-Red-Burgundy-1000011784679_01-2100.jpg",
         size : "S,M",
         color : "Red",
-        id : 4,
+        id : 3,
         category : "Shirts",
         occasion : "Casual",
         brand : "CELIO"
@@ -366,7 +368,7 @@ let displaydatamen=JSON.parse(localStorage.getItem("displayitemmen")) || []
     console.log(element)
     displaydatamen.push(element)
     localStorage.setItem("displayitemmen",JSON.stringify(displaydatamen))
-    window.location.href="mensdisplay.html"
+    window.location.href="/menPage/mensdisplay.html"
 }
 
 

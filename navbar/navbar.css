@@ -82,27 +82,28 @@
     cursor: pointer;
     /* border: 1px solid; */
 }
-.section1>h5:link{
-    text-decoration: none;
-}
-.section1>h5:link {
-    text-decoration: none;
+a:link {
     color: black;
-  }
-  
-.section1>h5:visited {
+    background-color: transparent;
     text-decoration: none;
-  }
-  
-.section1>:hover {
+    }
+
+    a:visited {
+    color: black;
+    background-color: transparent;
     text-decoration: none;
-  }
-  
-.section1>h5:active {
-    text-decoration: none;
-  }
-.section1>h5:hover{
+    }
+
+    a:hover {
     color: #faa619;
+    background-color: transparent;
+    /* text-decoration: underline; */
+    }
+
+    a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 .section2{
@@ -118,6 +119,9 @@
 }
 .section2>:nth-child(odd):hover{
     color:#faa619;
+}
+.section2 img{
+    cursor: pointer;
 }
 #searchBox{
     /* border: 1px solid blue; */

@@ -1,0 +1,35 @@
+let mensData=[
+    {
+        name : "GINGER Women Solid Round Neck Top",
+        price : 1299,
+        img : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010444516-Grey-Sage-1000010444516_01-2100.jpg",
+        size : "S,M",
+        color : "Blue",
+        category : "Top",
+        occasion : "Casual",
+        id : 1,
+        brand : "GINGER"  
+    },
+    {
+        name : "CODE Women Printed A-Line Midi Dress",
+        price : 1299,
+        img : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009839905-Black-Black-1000009839905_01-2100.jpg",
+        size : "S,M",
+        color : "Black",
+        category : "Dress",
+        occasion : "Casual",
+        id : 2,
+        brand : "CODE"  
+    },
+    {
+        name : "GINGER Women Textured Puffed Sleeves Crop Top",
+        price : 1299,
+        img : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009839905-Black-Black-1000009839905_01-2100.jpg",
+        size : "S,M",
+        color : "Black",
+        category : "Dress",
+        occasion : "Casual",
+        id : 2,
+        brand : "CODE"  
+    },
+]
