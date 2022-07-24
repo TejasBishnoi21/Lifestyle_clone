@@ -46,13 +46,13 @@
   position: absolute;
   width: 800px;
   margin-top: -52px;
-  margin-left: 202px;
+  margin-left: 198.5px;
   display: flex;
   justify-content: center;
 }
 
 .manual-btn{
-  border: 1px solid red;
+  border: 1px solid transparent;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;

@@ -4,75 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Mens Products</title>
+    <title>New Mens Page</title>
     <link rel="stylesheet" href="/navbar/navbar.css">
+    <link rel="stylesheet" href="/menPage/mensP2CSS.css">
     <link rel="stylesheet" href="/footer/footer.css">
-    <link rel="stylesheet" href="/menPage/mensProduct.css">
 
+    
 </head>
 <body>
-    <div id="navbar"></div>
 
-    <div class="allProducts">
-        <h4>All Mens Products</h4>
-    </div>
+<div id="navbar"></div> 
 
-    <div class="filterContainer">
-        <div class="filterBox">
-            <select name="" id="priceFilter">
-                <option value="">Price</option>
-            </select>
-
-            <select name="" id="categoryFilter">
-                <option value="">Category</option>
-            </select>
-
-            <select name="" id="brandFilter">
-                <option value="all">Brand</option>
-                <option value="V Dot">V Dot</option>
-                <option value="US POLO ASSN.">US POLO ASSN.</option>
-                <option value="CELIO">CELIO</option>
-                <option value="UNITED COLORS OF BENETTON">UNITED COLORS OF BENETTON</option>
-                <option value="LP SPORT">LP SPORT</option>
-                <option value="ALLEN SOLLY">ALLEN SOLLY</option>
-                <option value="PEPE JEANS">PEPE JEANS</option>
-                <option value="PUMA">PUMA</option>
-                <option value="ADIDAS">ADIDAS</option>
-                <option value="LEVI'S">LEVI'S</option>
-                <option value="TOMMY HILFIGER">TOMMY HILFIGER</option>
-                <option value="FOSSIL">FOSSIL</option>
-                <option value="EMPORIO ARMANI">EMPORIO ARMANI</option>
-            </select>
-
-            <select name="" id="sizeFilter">
-                <option value="">Size</option>
-            </select>
-
-            <select name="" id="colorFilter">
-                <option value="">Color</option>
-            </select>
-
-        </div>
-    </div>
-    
-    <div class="singleFilter">
-        <div><p>1358 Products</p></div>
-        <div>
-            <p>Sort By</p>
-            <select name="" id="">
-                <option value="">New Arrivals</option>
-                <option value="">Discount</option>
-            </select>
-        </div>
-    </div>
-<!-- [Product Display From Here] -->
-<div id="productDisplayContainer">
-    <h1>Products will be displayed here</h1>
+<div class="allProducts">
+    <h4>All Mens Products</h4>
 </div>
+
+<div class="filterContainer">
+    <div class="filterBox">
+        <select name="" id="priceFilter">
+            <option value="">Price</option>
+        </select>
+
+        <select name="" id="brandFilter">
+            <option value="Brand">Brand</option>
+            <option value="V Dot">V Dot</option>
+            <option value="US POLO ASSN.">US POLO ASSN.</option>
+            <option value="CELIO">CELIO</option>
+            <option value="UNITED COLORS OF BENETTON">UNITED COLORS OF BENETTON</option>
+            <option value="LP SPORT">LP SPORT</option>
+            <option value="ALLEN SOLLY">ALLEN SOLLY</option>
+            <option value="PEPE JEANS">PEPE JEANS</option>
+            <option value="PUMA">PUMA</option>
+            <option value="ADIDAS">ADIDAS</option>
+            <option value="LEVI'S">LEVI'S</option>
+            <option value="TOMMY HILFIGER">TOMMY HILFIGER</option>
+            <option value="FOSSIL">FOSSIL</option>
+            <option value="EMPORIO ARMANI">EMPORIO ARMANI</option>
+        </select>
+
+        <select name="" id="sizeFilter">
+            <option value="Size">Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="30">30</option>
+            <option value="32">32</option>
+            <option value="34">34</option>
+        </select>
+
+        <select name="" id="colorFilter">
+            <option value="">Color</option>
+        </select>
+
+    </div>
+</div>
+
+<div class="singleFilter">
+    <div><p>1358 Products</p></div>
+    <div>
+        <p>Sort By Category</p>
+        <select name="" id="filter">
+        <option value="All">All</option>
+        <!-- <option value="T-Shirt">T-Shirts</option> -->
+        <option value="Shirts">Shirts</option>
+        <option value="Watch">Watch</option>
+        <option value="Jeans">Jeans</option>
+        </select>
+    </div>
+</div>
+    
+<hr>
+
+<div id="contentWrap">
+            <div id="products">
+                <!-- Products will be appended here -->
+            </div>
+</div>
+
+<div id="footer"></div>
 
 </body>
 </html>
-
 <script>
     function loadHTML(){
         fetch('/navbar/navbar.html')
@@ -90,7 +102,7 @@
 </script>
 
 <script>
-    let mensData=[
+    let mensData = [
     {
         name : "V DOT Men Striped Full Sleeves Slim Fit Casual Shirt",
         price : 1299,
@@ -113,17 +125,7 @@
         occasion : "Casual",
         brand : "US POLO ASSN."
     },
-    {
-        name : "US POLO ASSN. Men Printed Regular Fit Casual Shirt",
-        price : 1899,
-        img : "https://lmsin.net/cdn-cgi/image/h=1200,w=1200,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010710984-Blue-1000010710984_02-2100.jpg",
-        size : "S,M",
-        color : "Blue",
-        category : "Shirts",
-        id : 3,
-        occasion : "Casual",
-        brand : "US POLO ASSN."
-    },
+    
     {
         name : "CELIO Men Solid Slim Fit Casual Shirt",
         price : 2899,
@@ -322,66 +324,90 @@
         occasion : "Casual",
         brand : "EMPORIO ARMANI"
     },
-]
-// [Data Ends Here]
-const productBox = document.getElementById('productDisplayContainer');
+];
 
-const filter = document.getElementById('brandFilter');
-let cart= JSON.parse(localStorage.getItem("cartData")) || [];
+let displaydatamen=JSON.parse(localStorage.getItem("displayitemmen")) || []
 
-function displayProducts(mensData){
-    productBox.innerHTML="";
-    mensData.foreach(function(elem){
-        const productDisplayBox = document.createElement('div');
-        const productImage = document.createElement('img');
-        productImage.src=elem.image;
-        const productPrice = document.createElement('h4');
-        productPrice.innerText=elem.price;
-        const productName = document.createElement('p');
-        productName.innerText=elem.product;
+    let productsCont = document.getElementById("products");
 
-        const addCartButton = document.createElement('button');
-        addCartButton.innerText="ADD TO BASKET";
-        addCartButton.addEventListener("click",function(){
-            if(addCartFunc(elem.id)===true){
-                alert("Product Added Succesfully");
-                cart.push(elem);
-                localStorage.setItem("cartData",JSON.stringify(cart));
-            }
-            else
-            {
-                alert("Product Already in Cart");
-            }
+    let sortCatg=document.getElementById("filter");
+
+    let sortBrd=document.getElementById("brandFilter");
+
+    let sortSize=document.getElementById("sizeFilter");
+    
+
+    function displayProducts(mensData){
+        productsCont.innerHTML="";
+        mensData.forEach(function(element){
+            let product=document.createElement("div");
+
+            product.addEventListener("click",function(){
+                displayfunmen(element)
+            })
+          
+
+            let img=document.createElement("img");
+            img.src=element.img;
+            let name=document.createElement("h2");
+            name.innerText=element.brand;
+            let category=document.createElement("p");
+            category.innerText=element.name;
+            let price=document.createElement("h4");
+            price.innerText="₹"+element.price;
+            product.append(img,name,category,price);
+            productsCont.append(product);
         })
+    }
 
-        productDisplayBox.append(productImage,productPrice,productName,addCartButton);
-        productDisplayContainer.append(productDisplayBox);
-    })
+
+    function displayfunmen (element){
+    event.target
+    console.log(element)
+    displaydatamen.push(element)
+    localStorage.setItem("displayitemmen",JSON.stringify(displaydatamen))
+    window.location.href="mensdisplay.html"
 }
 
-displayProducts(mensData);
 
-filter.addEventListener("change",function(){
-    if(filter.value === "all"){
-        displayProducts(mensData);
-    }
-    else{
-        let filtered = mensData.filter(function(elem){
-            return elem.brand === filter.value;
-        })
-        displayProducts(filtered);
-    }
-})
+    displayProducts(mensData);
 
-function addCartFunc(){
-    for(let i=0;i<cart.length;i++)
-    {
-        if(cart[i].id === mensData.id)
-        {
-            return false;
+    //[Function for Sort by category-]
+    sortCatg.addEventListener("change",function(){
+        if(sortCatg.value==="All"){
+            displayProducts(mensData);
+        }else{
+            let filtered=mensData.filter(function(element){
+                return element.category===sortCatg.value;
+            })
+            displayProducts(filtered);
         }
-    }
-    return true;
-}
+    })
+    //[Function for Sort by Brand-]
+    sortBrd.addEventListener("change",function(){
+        if(sortBrd.value==="Brand"){
+            displayProducts(mensData);
+        }
+        else
+        {
+            let filteredBr=mensData.filter(function(element){
+                return element.brand===sortBrd.value;
+            })
+            displayProducts(filteredBr);
+        }
+    })
+    //[Function for Sort by Size-]
+    sortSize.addEventListener("change",function(){
+        if(sortSize.value==="Size"){
+            displayProducts(mensData);
+        }
+        else
+        {
+            let filteredSz=mensData.filter(function(element){
+                return element.size===sortSize.value;
+            })
+            displayProducts(filteredSz);
+        }
+    })
 
 </script>
