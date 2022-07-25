@@ -125,19 +125,6 @@
 </body>
 </html>
 
-<!-- [Script for slider starts] -->
-<script type="text/javascript">
-    var counter = 1;
-    setInterval(function(){
-      document.getElementById('radio' + counter).checked = true;
-      counter++;
-      if(counter > 4){
-        counter = 1;
-      }
-    }, 5000);
-
-</script>
-
 <script>
         function loadHTML(){
         fetch('/navbar/navbar.html')
@@ -164,4 +151,17 @@
   function showProducts(){
     window.location.href="/womenPage/womenP2.html"
   }
+</script>
+
+<!-- [Script for slider starts] -->
+<script type="text/javascript">
+  let counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+      counter = 1;
+    }
+  }, 5000);
+
 </script>
