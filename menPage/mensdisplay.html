@@ -11,18 +11,25 @@
     <link rel="stylesheet" href="/footer/footer.css">
 
     <style>
-        
-        body{margin: 0px;}
+
+        *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+          font-family: "lifestyleSemiBold";
+        }
+        body{
+          margin: 0px;
+        }
 
         body>#container{
 
             width: 65%;
             display: flex;
-            
             margin: auto;
             justify-content: space-evenly;
-            margin-top: 150px;
-            
+            margin-top: 100px;
+            margin-bottom: 100px;
 
 
         }
@@ -31,7 +38,13 @@
             
         }
         #left{
-            position:sticky ;
+            display: grid;
+            grid-template-rows: repeat(2,fr);
+            font-family: "lifestyleRegular";
+            color: grey;
+            /* border: 1px solid red; */
+            padding: 5px;
+
         }
         #left>img{
                 width: 100%;
@@ -42,7 +55,7 @@
         #right>h2:nth-child(1){
             color: #4f5362;
             font-size: 18px;
-            font-family: montserrat-semibold,sans-serif;
+            font-family: "lifestyleSemiBold";
             margin-bottom: 10px;
         }
         #right>p{
@@ -65,32 +78,6 @@
             margin-bottom: 10px;
 
         }
-
-        #over{
-            width:70% ;
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20PX;
-            
-             
-        }
-        #over>div{
-            color: aliceblue;
-            background-color: #737373;
-            font-size: 14px;
-            line-height:  15px; 
-            padding: 2px 15px 2px 15px;
-            text-transform: capitalize;
-            
-            
-
-        }
-        #over>:nth-child(2){
-            background-color: white;
-            color:black;
-            border: 1px solid black;
-
-        }
         #tribe{
             margin-bottom: 10px;
         }
@@ -106,41 +93,93 @@
         margin-bottom: 30px;
       }
       #size>:nth-child(2)>div{
-        border: 1px solid black;
+        border: 1px solid grey;
         padding: 15px;
-        border-radius: 8px ;
+        /* border-radius: 8px ; */
         margin-top: 15px;
 
       }
       #button{
         display: flex;
+        flex-direction: column;
+        gap: 10px;
         justify-content: space-between;
         margin-top: 15px;
         margin-bottom: 15px;
+        /* border: 1px solid red; */
 
       }
       #button>:nth-child(1){
-        background-color: #ffd84d;
+        background-color: #ffa41c;
         border: #ffd84d;
+        width: 100%;
+        height: 50px;
+        padding: 5px;
         display: flex;
+        font-family: "lifestyleSemiBold";
+        color: white;
         justify-content: center;
         align-items: center;
-        padding: 1px 57px 1px 57px;
+        
       }
       #button>:nth-child(2){
         display: flex;
-        align-items: center;
-        padding: 1px 55px 1px 55px;
+        width: 100%;
+        /* border: 1px solid blue; */
+        justify-content: left;
+        gap: 5px;
+        padding: 5px;
 
       }
       #extra{
         margin-top: 15px;
+        padding: 5px;
       }
-      #extra>div{
+      .promo{
+        background-color: azure;
+        padding: 10px;
+        font-size: 15px;
+        color: red;
+        width: 45%;
+      }
+      .options{
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
+        margin-top: 20px;
+        /* border: 1px solid red; */
+        padding: 5px;
+        gap: 10px;
       }
+      .options a{
+        font-size: 12px;
+        text-decoration: underline;
+      }
+      .icons{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        gap: 35px;
+      }
+      .text{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        gap: 35px;
+        /* border: 1px solid red; */
+      }
+      .text input{
+        height: 35px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        width: 80%;
+        margin-top: 5px;
+      }
+      .text button{
+        height: 35px;
+        padding: 10px;
+        background-color: #ffa41c;
+        color: white;
+        border: none;
+        margin-top: 5px;
+      }
+      
 
     </style>
 </head>
@@ -148,22 +187,17 @@
       <div id="navbar"> </div>
 
       <div id="container"   >
-          <div id="left"  >
+          <div id="left">
+              <p>Mens purple love for all graphic printed oversized t shirt</p>
               <img src="https://images.bewakoof.com/t540/love-for-all-oversized-fit-t-shirt-510692-1655308520-1.jpg">
           </div>
         <div id="right">
             <h2>Lifestyle</h2>
-            <p>Mens purple love for all graphic printed oversized t shirt</p>
             <h1>$499</h1>
-            <p>inclusive of all taxes</p>
-            <div id="over">
-                <div>OVERSIZED FIT</div>
-                <div>DESIGN OF THE DAY</div>
-            </div>
-            <hr >
-           
-            <div id="tribe">tribe member get an extra discount of $30 and FREE shipping. <a href="">learn more</a></div>
+            <p>inclusive of all taxes</p> 
+            <h5>Color : <span id="color"></span></h5>
            <hr>
+
             <div id="size">
                 <div>
                     <h3>select size</h3>
@@ -179,19 +213,49 @@
             </div>
 
             <div id="button">
-                <button><img src="https://images.bewakoof.com/web/ic-web-head-cart.svg"><h4>ADD TO BAG</h4> </button>
-                <button><img src="https://images.bewakoof.com/web/ic-web-head-wishlist.svg"> <h4>WISHLIST</h4></button>
+                <button><h4>ADD TO BASKET</h4> </button>
+                <div>
+                  <img src="wishlist (1).png" alt="wishlist"><h4>Add to Favourites</h4>
+                </div>
+                
             </div>
+            <hr id="footerHr">
 
            <div id="extra">
-             <div>  <h4>SAVE EXTRA WITH 3 OFFERS</h4> <h2>+</h2></div>
-           <div> <h4>PRODUCT DESCRIPTION </h4> <h2>+</h2></div>
-           <div>  <h4>15 DAY RETURNS & EXCHANGE </h4> <h2>+</h2></div>
-           <div> <h4>DELIVERY DETAILS </h4> <h2>+</h2></div>
-         
+            <div class="promo"><h5>PROMOTION OFFER</h5></div>
+            <h5>Buy 2 get 50 percent off</h5>
+            <div class="options">
+              <div class="icons">
+                <img src="store_black_36dp.svg" alt="store">
+                <img src="calendar_month_black_36dp.svg" alt="calender">
+                <img src="local_shipping_black_36dp.svg" alt="truck">
+              </div>
 
+              <div class="text">
+                <div>
+                  <h5>Click & Collect</h5>
+                  <p>Order this product now and collect it from a store of your choice <a href="#">Learn More</a></p>
+                </div>
 
-         </div>
+                <div>
+                  <h5>Pay in Installments</h5>
+                  <p>Pay in easy Installments on orders of Rs. 3,000 or more.</p>
+                  <p>Available for select banks <a href="#">Learn more</a></p>
+                </div>
+
+                <div class="delTime">
+                  <h5>When will I receive my order ?</h5>
+                  <div class="pinBox">
+                    <input type="text" placeholder="Enter your Pincode">
+                    <button>Check</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+           </div>
+
+           <!-- <hr id="footerHr"> -->
          
         </div>
     </div>
@@ -217,10 +281,14 @@ function displaytable(displaydatamen){
 
      let image= document.querySelector("#left>img")
      image.setAttribute("src",displaydatamen[i].img)
-
-     let name= document.querySelector("#right>h2+p").innerText=displaydatamen[i].name
+     
+     let brandName= document.querySelector("#right>h2").innerText=displaydatamen[i].brand
+    
+     let name= document.querySelector("#left>p").innerText=displaydatamen[i].name
 
      let price=document.querySelector("#right>h1").innerText="₹"+displaydatamen[i].price
+     
+     const color = document.querySelector('#color').innerText=displaydatamen[i].color;
 
     let addtocart=document.querySelector("#button>button")
     addtocart.addEventListener("click",function(){
