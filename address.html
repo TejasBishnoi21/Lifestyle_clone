@@ -286,12 +286,7 @@ hr {
 document.querySelector("#form").addEventListener("submit", myFunction);
 let ArrayOfObj = JSON.parse(localStorage.getItem("address")) || [];
 // console.log(ArrayOfObj)
-//     if(localStorage.getItem("jobApplications")==null){
-//       jobArr=[]
-//     }
-//     else{
-//       jobArr=JSON.parse(localStorage.getItem("jobApplications"))
-//     }
+
 function myFunction(event) {
   event.preventDefault();
   var address = {

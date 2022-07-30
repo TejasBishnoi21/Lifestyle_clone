@@ -89,7 +89,6 @@
             justify-content: space-between;
         }
         #pppppdiv{
-            width: 80%;
             display: flex;
             justify-content: space-between;
         }
@@ -104,10 +103,11 @@
         #totaldiv>:nth-child(2){
             /* width: 3%; */
             padding: 10px;
-            width:80%;
+            width:100%;
             font-family:"lifestyleBold";
             background-color:#faa619;
             text-align: center; 
+            
         }
         hr{
             margin-top: 20px;
@@ -128,6 +128,7 @@
 <body>
 
     <div id="navbar"></div>
+
     <div class="pageTitle">
         <h4>Your Shopping Basket </h4>
     </div>
@@ -138,7 +139,9 @@
         <div id="right"></div>
     </div>
     <hr>
+
     <div id="footer"> </div>
+    
 </body>
 </html>
 
@@ -295,13 +298,7 @@
         button2.innerText="Move to wishlist"
 
 
-        indiv.append(button1,button2)
-
-
-
-
-
-
+            indiv.append(button1,button2)
             div1.append(p1,h2,p2,select,indiv)
 
             div2=document.createElement("div")
@@ -344,10 +341,8 @@
     let rdiv1=document.createElement("div")
 
     let p3=document.createElement("p")
-            p3.innerText="Whistles! Get extra 10% Cashback on prepaid orders above Rs.699. Coupon code - OOF10."
-             p3.style.color="#2D2D2D2"
-             p3.style.border="1px solid rgb(220, 218, 218)"
-             p3.style.padding="10px"
+            p3.innerText=""
+                
     let p4=document.createElement("p")
           p4.innerText="Get upto Rs.200 cashback on orders above Rs.299 on Paytm Wallet and Paytm Postpaid"
           p4.style.color="#2D2D2D2"
@@ -355,52 +350,49 @@
              p4.style.padding="10px"
            
      let p5=document.createElement("p")
-          p5.innerText="Whistles! Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW20. Applicable for new customers only!"  
+          p5.innerText="Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW20. Applicable for new customers only!"  
           p5.style.color="#2D2D2D2"
-             p5.style.border="1px solid rgb(220, 218, 218)"
-             p5.style.padding="10px"
+          p5.style.border="1px solid rgb(220, 218, 218)"
+          p5.style.padding="10px"
           
-     let rdiv2=document.createElement("div")
-
-
+     let rdiv2=document.createElement("div");
+    //  rdiv2.style.border="1px solid red"
+     rdiv2.style.display="flex";
+     rdiv2.style.justifyContent="space-around"
+     rdiv2.style.gap="10px"
+    //  rdiv2.style.textAlign="center"
+     rdiv2.style.marginTop="10px"
+     rdiv2.style.marginBottom="10px"
+     
      let input=document.createElement("input")
         input.setAttribute("type","text")
         input.setAttribute("placeholder","Have a Coupon / Referral")
-        input.style.backgroundColor="#acf4f4"
-        input.style.border="none"
+        input.style.backgroundColor="white"
+        input.style.border="1px solid #ddd"
         input.style.width="60%"
         input.style.padding="7px"
 
   
     let button=document.createElement("button")
         button.innerText="Redeem >>"
-        button.style.color="#42A2A2"
-        button.style.backgroundColor="#acf4f4"
+        button.style.color="white"
+        button.style.backgroundColor="red"
         button.style.border="none"
         button.style.width="30%"
         button.style.padding="7px"
+        button.style.cursor="pointer"
         button.addEventListener("click",function(){
     promofun(input.value,total)
 })
 
 function promofun(code,total){
     if(code=="OOF10"){
-    //   let  comm=total%30
-    //   console.log(total)
-    //    console.log(total/3)
          if(total>=699){
             pppp1.innerText=total/10
             total=total-(total/10)
-         
-           
-
-        ppppp1.innerText=total
-        prch.innerText=total
-        
+            ppppp1.innerText=total
+            prch.innerText=total
          }
-       
-        
-
     }
     
     else if(code=="NEW20" || code=="SALE10"){
@@ -408,39 +400,17 @@ function promofun(code,total){
         if(total>=499){
             pppp1.innerText=total/5
             total=total-(total/5)
-
-           
-
-        ppppp1.innerText=total
-        prch.innerText=total
-        
+            ppppp1.innerText=total
+            prch.innerText=total
          }
-
     }
-    
     else{ ppppp1.innerText=total}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
-
-
-
   let rdiv3=document.createElement("div")
+//   rdiv3.style.border="1px solid red"
+  rdiv3.style.display="grid";
+  rdiv3.style.gap="10px";
 
   let h=document.createElement("h3")
    h.innerText="PRICE SUMMARY"
@@ -448,6 +418,8 @@ function promofun(code,total){
 
 
    let ppdiv=document.createElement("div")
+//    ppdiv.style.border="1px solid red"
+   ppdiv.style.width="100%";
      ppdiv.setAttribute("id","ppdiv")
 
    let pp=document.createElement("p")
@@ -461,6 +433,7 @@ function promofun(code,total){
 
 
    let pppdiv=document.createElement("div")
+   pppdiv.style.width="100%";
      pppdiv.setAttribute("id","pppdiv")
 
    let ppp=document.createElement("p")
@@ -475,6 +448,7 @@ ppp1.style.color="green"
 
 
    let ppppdiv=document.createElement("div")
+   ppppdiv.style.width="100%";
      ppppdiv.setAttribute("id","ppppdiv")
 
    let pppp=document.createElement("p")
@@ -489,6 +463,7 @@ ppp1.style.color="green"
 
    
    let pppppdiv=document.createElement("div")
+   pppppdiv.style.width="100%";
      pppppdiv.setAttribute("id","pppppdiv")
 
    let ppppp=document.createElement("p")
@@ -512,24 +487,30 @@ ppp1.style.color="green"
 
 
 let totaldiv=document.createElement("div")
+// totaldiv.style.border="1px solid blue";
+totaldiv.style.padding="5px"
+
 totaldiv.setAttribute("id","totaldiv")
   
 let prcdiv=document.createElement("div")
+// prcdiv.style.width="100%";
+// prcdiv.style.border="2px solid brown"
+
 let prcp=document.createElement("p")
 prcp.innerText="Total"
 prcp.style.fontFamily="lifestyleBold"
+// prcp.style.border="1px solid blue"
+
 let prch=document.createElement("p")
 prch.innerText=total || 0
-
+// prch.style.border="1px solid green"
+prch.style.fontFamily="lifestyleBold"
+prch.style.fontSize="20px"
 prcdiv.append(prcp,prch)
 // prcdiv.style.border="1px solid red"
-prcdiv.style.width="80%"
+prcdiv.style.width="100%"
 prcdiv.style.display="flex"
 prcdiv.style.justifyContent="space-between"
-
-
-
-
 
 let adddiv=document.createElement("div")
 adddiv.innerText="Checkout Now"

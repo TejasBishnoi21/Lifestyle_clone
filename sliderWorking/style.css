@@ -64,7 +64,7 @@
 }
 
 .manual-btn:hover{
-  background: #40D3DC;
+  background:red;
 }
 
 #radio1:checked ~ .first{
